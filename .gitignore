@@ -1,2 +1,7 @@
 # Ignore the added schedule document
 intro_cli_schedule.docx
+
+# Generated Day 1 artifacts
+day1/data/
+day1/results/
+day1/work/
