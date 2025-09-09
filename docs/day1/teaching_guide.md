@@ -21,24 +21,9 @@
 ## 1:00–1:15 — Welcome & Setup
 
 Talking points:
-- Why the CLI matters
-  - Automation: repeat complex workflows with a single script/command (saves time; fewer clicks = fewer mistakes).
-  - Reproducibility: commands form an audit trail you can share in README/notebooks; easy to version with Git.
-  - Remote work and scale: clusters/servers expose a shell; many tools (SLURM, Nextflow, Snakemake) are CLI-first.
-  - Composability: small tools that do one thing well can be chained with pipes into powerful pipelines.
-  - Speed and resource usage: text-based, works over slow connections, scriptable loops over large datasets.
-  - Quick story you can tell: “We turned a 20‑minute manual QC into a 5‑second one-liner and put it in CI.”
-- Terminal vs. Shell vs. Command Line (set expectations)
-  - Terminal: the window/app you are looking at (e.g., macOS Terminal, iTerm2, VSCode Terminal, OnDemand shell).
-  - Shell: the program interpreting what you type (bash, zsh, fish). It expands wildcards, runs commands, manages history.
-  - Command line: the interface where you enter commands (the prompt), e.g., `user@host project %`.
-  - Prompt anatomy: shows user/host/path; cursor is where your next command goes.
-  - Programs vs. built-ins: some commands are external executables (e.g., `/bin/ls`), some are shell built-ins (e.g., `cd`).
-- Today’s shell and ensuring consistent behavior
-  - We’ll use bash-compatible commands. On macOS the default shell is often zsh; our examples work in both.
-  - Verify your shell: `echo $SHELL` (expect `/bin/bash` or `/bin/zsh`). If needed, temporarily start bash with `bash`.
-  - Consistency checklist: same repo folder (`pwd` at project root), similar `$PATH`, and no conflicting aliases.
-  - Minor differences to watch: array syntax, `[[ ... ]]` tests, and some default options between bash vs zsh.
+- Why CLI matters (automation, reproducibility, remote work)
+- Distinguish terminal (app), shell (program), command line (interface)
+- Which shell are we using today; ensure consistent behavior
 
 Live demo:
 ```bash
@@ -96,6 +81,35 @@ Hands-on: `day1/exercises/01_navigation.md`
 Instructor tips:
 - Encourage tab completion, history search (Ctrl-R)
 - Reinforce mental model of current working directory
+
+Mind map — Current Working Directory
+```mermaid
+mindmap
+  root((Current Working Directory))
+    Meaning
+      "Your current location in the filesystem"
+      "Relative paths resolve from here"
+    See/Show
+      pwd
+      "Prompt shows path"
+    Shortcuts
+      ". = here"
+      ".. = parent"
+      "~ = home"
+    Move
+      "cd <path>"
+      "cd .."
+      "cd - (back)"
+    Use Cases
+      "Keep commands short and portable"
+      "Scripts assume a starting directory"
+    Pitfalls
+      "Running from the wrong dir breaks relative paths"
+      "Spaces in paths need quotes"
+```
+
+![CWD Mind Map](../assets/cwd-mindmap.svg)
+[Download as SVG](../assets/cwd-mindmap.svg)
 
 ---
 
