@@ -97,9 +97,17 @@ mindmap
       ".. = parent"
       "~ = home"
     Move
+      "cd (no args) -> home"
       "cd <path>"
       "cd .."
       "cd - (back)"
+    Peek Inside
+      "ls"
+      "Lists files and directories"
+      "ls -a"
+      "Lists ALL items"
+      "(-a for all)"
+      "Includes hidden files (names starting with .)"
     Use Cases
       "Keep commands short and portable"
       "Scripts assume a starting directory"
@@ -110,6 +118,34 @@ mindmap
 
 ![CWD Mind Map](../assets/cwd-mindmap.svg)
 [Download as SVG](../assets/cwd-mindmap.svg)
+
+Concept map — Current Working Directory
+
+```mermaid
+graph TD
+  CWD["Current Working Directory"]
+  RelPaths["Relative paths"]
+  AbsPaths["Absolute paths (/...)"]
+  Prompt["Shell prompt"]
+  PWD["pwd"]
+  CD["cd <path>"]
+  Shortcuts["Shortcuts: ., .., ~"]
+  WrongDir["Wrong directory"]
+  Spaces["Paths with spaces"]
+  Quotes["quotes"]
+
+  CWD -->|determines base for| RelPaths
+  CWD -. ignored by .-> AbsPaths
+  Prompt -->|displays| CWD
+  PWD -->|prints| CWD
+  CD -->|changes| CWD
+  Shortcuts -->|refer to| CWD
+  WrongDir -->|breaks| RelPaths
+  Spaces -->|need| Quotes
+```
+
+![CWD Concept Map](../assets/cwd-concept-map.svg)
+[Download as SVG](../assets/cwd-concept-map.svg)
 
 ---
 
