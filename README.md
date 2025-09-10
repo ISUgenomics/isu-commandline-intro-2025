@@ -19,8 +19,9 @@
 
 ## **Assessment of Time Feasibility**
 
-* The adapted material (skipping SSH, nano, vim) fits comfortably into a **4-hour session** with a 10-minute break included.
-* Each section allows for explanations, demonstrations, and hands-on exercises.
+* This material fits into a four hour session while skipping SSH and text editors.
+* Each section allows starts with explanations followed by demonstrations.
+* Remaining time will be given to for hands-on exercises.
 
 ---
 
