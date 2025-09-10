@@ -14,6 +14,6 @@ if $clean && [[ -d "$data_dir" ]]; then
 fi
 
 mkdir -p "$data_dir"
-"$(dirname "$0")/generate_data.sh"
+bash "$(dirname "$0")/generate_data.sh"
 
 echo "Workspace ready at $root_dir"
