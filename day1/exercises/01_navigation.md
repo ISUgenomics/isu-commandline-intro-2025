@@ -11,4 +11,4 @@ Tasks:
 
 Hints:
 - `pwd`, `ls -la`, `ls -lh`, `cd`, `ls -R`, `find . -type d`
-- Use `cd -` to jump back.
+- Use `cd -` to jump back to the day1/data/ directory.
