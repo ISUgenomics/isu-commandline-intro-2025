@@ -7,7 +7,7 @@ Tasks:
 - Find files modified in the last 7 days under `day1/data/`.
 - Search for lines containing `ERROR` (case-insensitive) in all logs.
 - Search for requests returning status `500` in `access.log` and print line numbers.
-- Find lines containing the word `user` followed by `=`.
+- Find lines containing the word `user` followed by `=` and someones name.
 
 Hints:
 - `find day1/data -type f -name *log`
