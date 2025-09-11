@@ -10,5 +10,5 @@ Tasks:
 - Find lines containing the word `user` followed by `=`.
 
 Hints:
-- `find day1/data -type f -name '*.log'`
+- `find day1/data -type f -name *log`
 - `-mtime -7`, `grep -i`, `grep -n`, `grep -E 'user=\w+'`
