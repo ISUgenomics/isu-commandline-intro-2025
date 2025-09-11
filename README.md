@@ -17,16 +17,7 @@
 
 ---
 
-## **Assessment of Time Feasibility**
-
-* This material fits into a four hour session while skipping SSH and text editors.
-* Each section allows starts with explanations followed by demonstrations.
-* Remaining time will be given to for hands-on exercises.
-
----
-
 **Resources for Participants:**
 
 * [Cheat Sheet PDF](https://cheatography.com/davechild/cheat-sheets/linux-command-line/pdf/)
 * [ExplainShell](https://explainshell.com/) — Type commands and see breakdown.
-* [OverTheWire Bandit](https://overthewire.org/wargames/bandit/) — Gamified CLI learning.
