@@ -3,7 +3,6 @@
 This folder contains the hands-on materials aligned with `docs/schedule.md`.
 
 - Focus: CLI concepts, navigation, viewing, file ops, permissions, search, redirection/pipes, env variables
-- Prereqs: A terminal (Terminal on macOS/Linux or Powershell/WSL/Git Bash on Windows)
 
 ## Quick start
 
@@ -11,9 +10,14 @@ This folder contains the hands-on materials aligned with `docs/schedule.md`.
   ```
   Account: short_term
   Partition: interactive
-  Working Directory: /work/short_term/
   ```
-- Working directory is `/work/short_term/<your username>/`
+- File -> Open Folder -> `/work/short_term/<your username>/` - create the directory if it does not exist:
+  ```bash
+  cd /work/short_term/
+  mkdir $USER
+  ```
+- Then do File -> Open Folder -> `/work/short_term/<your username>/`
+
 - Clone git repository:
   ```bash
   git clone git@github.com:ISUgenomics/isu-commandline-intro-2025.git
@@ -21,9 +25,9 @@ This folder contains the hands-on materials aligned with `docs/schedule.md`.
 
 ## Layout
 
-- `exercises/` — step-by-step tasks matching the workshop sections
-- `scripts/` — setup scripts to generate sample data and directories
-- `data/` — sample inputs (created by scripts)
+- `exercises/` — step-by-step tasks for the workshop
+- `scripts/` — sample script
+- `data/` — sample inputs
 
 ## Exercises
 

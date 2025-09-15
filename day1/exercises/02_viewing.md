@@ -1,6 +1,6 @@
 # Exercise 2 — Viewing files
 
-Goals: practice `cat`, `less`, `head`, `tail`, wildcards, and basic formatting
+Goals: practice `cat`, `less`, `head`, `tail`, wildcard `*`, and basic formatting
 
 Tasks:
 - Show the first 3 lines of `raw/sample1.txt`
