@@ -24,7 +24,8 @@
 * Remaining time will be given to for hands-on exercises.
 
 ---
-Concept map — Current Working Directory
+
+## **Concept map — Current Working Directory**
 
 ```mermaid
 graph TD
