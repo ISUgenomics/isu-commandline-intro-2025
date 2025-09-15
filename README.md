@@ -29,4 +29,3 @@
 
 * [Cheat Sheet PDF](https://cheatography.com/davechild/cheat-sheets/linux-command-line/pdf/)
 * [ExplainShell](https://explainshell.com/) — Type commands and see breakdown.
-* [OverTheWire Bandit](https://overthewire.org/wargames/bandit/) — Gamified CLI learning.
