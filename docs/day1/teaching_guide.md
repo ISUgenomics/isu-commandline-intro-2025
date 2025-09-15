@@ -24,7 +24,7 @@ Live demo:
 ```bash
 # What shell and version?
 echo $SHELL
-$SHELL --version || true
+$SHELL --version 
 
 # Where am I? What's this machine?
 pwd
@@ -32,9 +32,8 @@ uname -a
 ```
 
 Common pitfalls:
-- Different shells: bash vs zsh (minor differences today)
-- Windows users: WSL or Git Bash
-
+- Different shells
+- Windows users: Powershell or WSL or Git Bash
 ---
 
 ## 1:15–1:30 — Open OnDemand + VSCode (optional if local)
@@ -63,47 +62,11 @@ cd day1
 pwd
 cd data
 pwd
-# Go back to the last directory
-cd -
-
-# Find directories recursively
-echo "Directories under day1/data:"
-find day1/data -type d | head
+cd ..
 ```
 
 Hands-on: `day1/exercises/01_navigation.md`
 
-Instructor tips:
-- Encourage tab completion, history search (Ctrl-R)
-- Reinforce mental model of current working directory
-
-Concept map — Current Working Directory
-
-```mermaid
-graph TD
-  CWD["Current Working Directory"]
-  RelPaths["Relative paths"]
-  AbsPaths["Absolute paths (/...)"]
-  Prompt["Shell prompt"]
-  PWD["pwd"]
-  CD["cd <path>"]
-  Shortcuts["Shortcuts: ., .., ~"]
-  WrongDir["Wrong directory"]
-  Spaces["Paths with spaces"]
-  Quotes["quotes"]
-
-  CWD -->|determines base for| RelPaths
-  CWD -. ignored by .-> AbsPaths
-  Prompt -->|displays| CWD
-  PWD -->|prints| CWD
-  CD -->|changes| CWD
-  Shortcuts -->|refer to| CWD
-  WrongDir -->|breaks| RelPaths
-  Spaces -->|need| Quotes
-```
-
-![CWD Concept Map](../assets/cwd-concept-map.svg)
-[Download as SVG](../assets/cwd-concept-map.svg)
 
 ---
 
@@ -144,7 +107,7 @@ Invite questions; keep terminal visible with summary commands on screen.
 Talking points:
 - `mkdir -p` for nested dirs
 - Copy vs move; recursive operations
-- Safe removal; avoid `rm -rf` blind usage
+- Safe removal; avoid `rm -r` blind usage
 
 Live demo:
 ```bash
