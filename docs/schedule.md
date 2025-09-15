@@ -47,7 +47,7 @@
 
 - File permissions and `ls -l`.
 - `chmod` ugoa, rwx, +, -, =.
-- String together multiple with commas -- chmod u=rwx,g=rx,o=r myfile
+- String together multiple with commas -- `chmod u=rwx,g=rx,o=r myfile`
 - Hands-on Exercise 4.
 
 ### 3:40 - 4:10 PM — Finding Files and Searching Inside Files
