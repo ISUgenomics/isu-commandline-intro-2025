@@ -182,9 +182,6 @@ chmod -x day1/work/alpha_copy/logs/access.log || true
 
 Hands-on: `day1/exercises/04_permissions.md`
 
-Notes:
-- Do not dive deep into users/groups/ACLs; keep to basics # Access control lists
-
 ---
 
 ## 3:40–4:10 — Finding Files and Grep
@@ -221,7 +218,7 @@ Live demo:
 # Uppercase all txt into a single file
 cat day1/data/raw/*.txt | tr '[:lower:]' '[:upper:]' > day1/results/all_upper.txt
 # Count GET lines
-grep ' GET ' day1/data/projects/alpha/logs/access.log | wc -l > day1/results/get_count.txt
+grep 'GET' day1/data/projects/alpha/logs/access.log | wc -l > day1/results/get_count.txt
 # Unique names from CSV (skip header)
 tail -n +2 day1/data/reports/summary.csv | cut -d, -f1 | sort -u > day1/results/names.txt
 # Chaining
