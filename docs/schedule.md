@@ -53,7 +53,7 @@
 ### 3:40 - 4:10 PM — Finding Files and Searching Inside Files
 
 - `find` -type -name
-- `grep` with options: -i , -n, -E, -c
+- `grep` with options: -i , -n, -c
 - Hands-on Exercise 5.
 
 ### 4:10 - 4:40 PM — Redirects, Pipes, and Command Chaining
