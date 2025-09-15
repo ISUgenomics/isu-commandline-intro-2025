@@ -7,7 +7,7 @@ Tasks:
 - Extract only `GET` lines from `access.log`, count them, and write the number to `day1/results/get_count.txt`.
 - Sort unique `name` values from `reports/summary.csv` (skipping the header) and printing to file `day1/results/names.txt`.
 - Chain commands to make a directory and only on success echo "OK".
-- Demonstrate a command that falls back to echo "failed" when a nonexistent file is read.
+- Demonstrate a command that falls back to echo "failed" when trying to read a nonexistent file `missing`.
 
 Hints:
 - `cat | tr`, `grep`, `wc -l`, `cut -d, -f1`, `tail -n +2`, `sort -u`, `mkdir -p dir && echo OK`, `cat missing || echo failed`
