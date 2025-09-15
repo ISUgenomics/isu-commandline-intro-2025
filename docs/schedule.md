@@ -33,7 +33,7 @@
 
 ### 2:00 - 2:30 PM — Viewing Files and Directories
 
-- `cat`, `less`, `head`, `tail`, `wc`, wildcards.
+- `cat`, `less`, `head`, `tail`, `wc`, `ln -s` (folders vs files), wildcard (*).
 - Hands-on Exercise 2.
 
 ### 2:30 - 2:40 PM — Break
