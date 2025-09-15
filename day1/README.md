@@ -3,21 +3,25 @@
 This folder contains the hands-on materials aligned with `docs/schedule.md`.
 
 - Focus: CLI concepts, navigation, viewing, file ops, permissions, search, redirection/pipes, env variables
-- Prereqs: A terminal (macOS/Linux or Windows with WSL/Git Bash)
+- Prereqs: A terminal (Terminal on macOS/Linux or Powershell/WSL/Git Bash on Windows)
 
 ## Quick start
 
-- Generate the sample workspace and data:
-  ```bash
-  bash day1/scripts/reset_workspace.sh --clean
+- VS Code Server on Nova OnDemand through a browser: `https://nova-ondemand.its.iastate.edu/`
   ```
-- Then open the exercises in `day1/exercises/` and work through `01` to `07`.
-- Reference answers: `day1/solutions/README.md`
+  Account: short_term
+  Partition: interactive
+  Working Directory: /work/short_term/
+  ```
+- Working directory is `/work/short_term/<your username>/`
+- Clone git repository:
+  ```bash
+  git clone git@github.com:ISUgenomics/isu-commandline-intro-2025.git
+  ```
 
 ## Layout
 
 - `exercises/` — step-by-step tasks matching the workshop sections
-- `solutions/` — reference answers (commands + short notes)
 - `scripts/` — setup scripts to generate sample data and directories
 - `data/` — sample inputs (created by scripts)
 

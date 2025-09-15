@@ -24,7 +24,7 @@ Live demo:
 ```bash
 # What shell and version?
 echo $SHELL
-$SHELL --version || true
+$SHELL --version 
 
 # Where am I? What's this machine?
 pwd
@@ -32,9 +32,8 @@ uname -a
 ```
 
 Common pitfalls:
-- Different shells: bash vs zsh (minor differences today)
-- Windows users: WSL or Git Bash
-
+- Different shells
+- Windows users: Powershell or WSL or Git Bash
 ---
 
 ## 1:15–1:30 — Open OnDemand + VSCode (optional if local)
@@ -63,8 +62,8 @@ cd day1
 pwd
 cd data
 pwd
-# Go back to the last directory
-cd -
+# Go back to the parent directory
+cd ..
 
 # Find directories recursively
 echo "Directories under day1/data:"
