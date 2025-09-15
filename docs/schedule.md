@@ -74,7 +74,7 @@
 ### 4:55 - 5:00 PM — Recap and Q&A
 
 - Review of key commands.
-- Cheat sheet distribution.
+- Concept map `Current Working Directory`
 - Questions from participants.
 - Suggested practice resources.
 
