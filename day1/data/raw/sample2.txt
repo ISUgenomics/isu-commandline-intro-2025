@@ -1,0 +1,3 @@
+Another example file
+with lines,
+words, and bytes 123.
