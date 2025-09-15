@@ -24,6 +24,33 @@
 * Remaining time will be given to for hands-on exercises.
 
 ---
+Concept map — Current Working Directory
+
+```mermaid
+graph TD
+  CWD["Current Working Directory"]
+  RelPaths["Relative paths"]
+  AbsPaths["Absolute paths (/...)"]
+  Prompt["Shell prompt"]
+  PWD["pwd"]
+  CD["cd <path>"]
+  Shortcuts["Shortcuts: ., .., ~"]
+  WrongDir["Wrong directory"]
+  Spaces["Paths with spaces"]
+  Quotes["quotes"]
+
+  CWD -->|determines base for| RelPaths
+  CWD -. ignored by .-> AbsPaths
+  Prompt -->|displays| CWD
+  PWD -->|prints| CWD
+  CD -->|changes| CWD
+  Shortcuts -->|refer to| CWD
+  WrongDir -->|breaks| RelPaths
+  Spaces -->|need| Quotes
+```
+
+![CWD Concept Map](../assets/cwd-concept-map.svg)
+[Download as SVG](../assets/cwd-concept-map.svg)
 
 **Resources for Participants:**
 
