@@ -10,5 +10,6 @@ Tasks:
 - Using absolute path, cd to `projects/alpha/logs` and back.
 
 Hints:
-- `pwd`, `ls -la`, `ls -lh`, `cd`, `ls -R`, `find . -type d`
-- Use `cd -` to jump back to the day1/data/ directory.
+- `pwd`, `ls -la`, `ls -lh`, `cd`, `ls -R`
+- Use `cd -` to jump back.
+

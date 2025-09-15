@@ -1,0 +1,6 @@
+2025-01-01T10:00:00Z GET /index 200 user=alice
+2025-01-01T10:01:00Z POST /submit 201 user=bob
+2025-01-01T10:02:00Z GET /health 200 user=carol
+2025-01-01T10:03:00Z GET /metrics 500 user=alice error="db timeout"
+2025-01-01T10:04:00Z GET /search?q=linux 200 user=dave
+2025-01-01T10:05:00Z GET /search?q=linux 300 user=

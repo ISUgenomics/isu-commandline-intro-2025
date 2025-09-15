@@ -1,0 +1,4 @@
+Hello world
+This is a sample file.
+It contains multiple    spaces and	tabs.
+End.

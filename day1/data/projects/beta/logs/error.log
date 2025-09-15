@@ -1,0 +1,3 @@
+2025-01-02T09:59:00Z WARN retrying connection
+2025-01-02T10:00:05Z ERROR failed to open file path=/data/input.txt
+2025-01-02T10:00:10Z INFO started worker id=42

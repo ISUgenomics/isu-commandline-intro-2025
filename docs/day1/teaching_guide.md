@@ -2,11 +2,6 @@
 
 - Audience: absolute/early beginners to CLI
 - Duration: 4 hours (with one 10-minute break)
-- Workspace setup: run once before starting demos
-
-  ```bash
-  bash day1/scripts/reset_workspace.sh --clean
-  ```
 
 ## Objectives
 - Understand CLI concepts: terminal vs. shell vs. command line
@@ -68,7 +63,7 @@ cd day1
 pwd
 cd data
 pwd
-# Go back efficiently
+# Go back to the last directory
 cd -
 
 # Find directories recursively
@@ -81,43 +76,6 @@ Hands-on: `day1/exercises/01_navigation.md`
 Instructor tips:
 - Encourage tab completion, history search (Ctrl-R)
 - Reinforce mental model of current working directory
-
-Mind map — Current Working Directory
-```mermaid
-mindmap
-  root((Current Working Directory))
-    Meaning
-      "Your current location in the filesystem"
-      "Relative paths resolve from here"
-    See/Show
-      pwd
-      "Prompt shows path"
-    Shortcuts
-      ". = here"
-      ".. = parent"
-      "~ = home"
-    Move
-      "cd (no args) -> home"
-      "cd <path>"
-      "cd .."
-      "cd - (back)"
-    Peek Inside
-      "ls"
-      "Lists files and directories"
-      "ls -a"
-      "Lists ALL items"
-      "(-a for all)"
-      "Includes hidden files (names starting with .)"
-    Use Cases
-      "Keep commands short and portable"
-      "Scripts assume a starting directory"
-    Pitfalls
-      "Running from the wrong dir breaks relative paths"
-      "Spaces in paths need quotes"
-```
-
-![CWD Mind Map](../assets/cwd-mindmap.svg)
-[Download as SVG](../assets/cwd-mindmap.svg)
 
 Concept map — Current Working Directory
 
@@ -158,14 +116,14 @@ Talking points:
 Live demo:
 ```bash
 # Peek at samples
-head -n 3 day1/data/raw/sample1.txt
-tail -n 2 day1/data/raw/sample2.txt
+head -n 2 day1/data/raw/sample1.txt
+tail -n 3 day1/data/raw/sample2.txt
 
-# Page through and search within less (press /500 then n)
-less +/500 day1/data/projects/alpha/logs/access.log
+# Page through and search within less (press /GET then n)
+less +/GET day1/data/projects/alpha/logs/access.log
 
-# Combine streams
-cat day1/data/raw/*.txt | wc -w
+# Combine streams and count the lines
+cat day1/data/raw/*.txt | wc -l
 ```
 
 Hands-on: `day1/exercises/02_viewing.md`
@@ -190,10 +148,10 @@ Talking points:
 
 Live demo:
 ```bash
-mkdir -p day1/work/step1 day1/results
-cp day1/data/raw/*.txt day1/work/step1/
-ls -l day1/work/step1
-mv day1/data/tmp/placeholder.txt day1/work/
+mkdir -p day1/pork/step2 day1/results
+cp day1/data/raw/*.txt day1/pork/step2/
+ls -l day1/pork/step2
+mv day1/data/tmp/test.txt day1/work/
 # Remove empty files safely
 find day1/data/tmp -type f -empty -delete
 # Recursive copy example
@@ -201,9 +159,6 @@ cp -r day1/data/projects/alpha day1/work/alpha_copy
 ```
 
 Hands-on: `day1/exercises/03_files_dirs.md`
-
-Safety note:
-- Explain what `-r` and `-f` do; encourage `-i` for interactive prompts
 
 ---
 
@@ -226,9 +181,6 @@ chmod -x day1/work/alpha_copy/logs/access.log || true
 ```
 
 Hands-on: `day1/exercises/04_permissions.md`
-
-Notes:
-- Do not dive deep into users/groups/ACLs; keep to basics # Access control lists
 
 ---
 
@@ -260,14 +212,13 @@ Hands-on: `day1/exercises/05_find_grep.md`
 
 Talking points:
 - `>` overwrite vs `>>` append; `|` pipeline; `;`, `&&`, `||` flow control
-- Mention `tee` for viewing and saving simultaneously
 
 Live demo:
 ```bash
 # Uppercase all txt into a single file
 cat day1/data/raw/*.txt | tr '[:lower:]' '[:upper:]' > day1/results/all_upper.txt
 # Count GET lines
-grep ' GET ' day1/data/projects/alpha/logs/access.log | wc -l > day1/results/get_count.txt
+grep 'GET' day1/data/projects/alpha/logs/access.log | wc -l > day1/results/get_count.txt
 # Unique names from CSV (skip header)
 tail -n +2 day1/data/reports/summary.csv | cut -d, -f1 | sort -u > day1/results/names.txt
 # Chaining
@@ -290,7 +241,7 @@ Live demo:
 echo "$HOME"
 echo "$PATH"
 export PATH="$PATH:$(pwd)/day1/scripts"
-which reset_workspace.sh || true
+which EchoScript.sh || true
 
 DATA_DIR=$(pwd)/day1/data
 ls "$DATA_DIR"/*.csv || true
@@ -310,7 +261,6 @@ Hands-on: `day1/exercises/07_env_vars.md`
 ---
 
 ## Appendix — Troubleshooting & Tips
-- If the data isn’t there: run `bash day1/scripts/reset_workspace.sh --clean`
 - Use quotes around paths with spaces
 - Use `man <cmd>` or `<cmd> --help` for flags
 - `history | tail -n 20` to recall recent commands
