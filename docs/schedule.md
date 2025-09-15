@@ -22,7 +22,9 @@
 - Launching interactive sessions.
 - Connecting to VSCode from Open OnDemand.
 - Using VSCode for editing and running shell commands.
-
+- Man and help functions, file/folder naming conventions.
+- Encourage use of LLM's, Google, etc. 
+  
 ### 1:30 - 2:00 PM — Navigating the File System
 
 - `pwd`, `ls`, `cd`.
@@ -44,24 +46,28 @@
 ### 3:10 - 3:40 PM — Permissions and Ownership
 
 - File permissions and `ls -l`.
-- `chmod` basics.
+- `chmod` ugoa, rwx, +, -, =.
+- String together multiple with commas -- chmod u=rwx,g=rx,o=r myfile
 - Hands-on Exercise 4.
 
 ### 3:40 - 4:10 PM — Finding Files and Searching Inside Files
 
-- `find`, `grep` with options.
+- `find` -type -name
+- `grep` with options: -i , -n, -E, -c
 - Hands-on Exercise 5.
 
 ### 4:10 - 4:40 PM — Redirects, Pipes, and Command Chaining
 
 - Redirect output/input.
 - Piping with `|`.
-- Command chaining with `;`, `&&`, `||`.
+- Command chaining with `sequential`, `and`, and `or` -> `;`, `&&`, `||`.
+- sort and redirecting with `output redirection operator` -> `>`
 - Hands-on Exercise 6.
 
 ### 4:40 - 4:55 PM — Environment and Variables
 
 - Environment variables: `HOME`, `PATH`.
+- export PATH="$PATH:/work/short_term/remkv6/05_BashIntro/isu-commandline-intro-2025" 
 - Creating and exporting variables.
 - Hands-on Exercise 7.
 
