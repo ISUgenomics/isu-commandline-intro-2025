@@ -261,7 +261,6 @@ Hands-on: `day1/exercises/07_env_vars.md`
 ---
 
 ## Appendix — Troubleshooting & Tips
-- If the data isn’t there: run `bash day1/scripts/reset_workspace.sh --clean`
 - Use quotes around paths with spaces
 - Use `man <cmd>` or `<cmd> --help` for flags
 - `history | tail -n 20` to recall recent commands
