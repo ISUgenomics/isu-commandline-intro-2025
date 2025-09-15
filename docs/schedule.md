@@ -61,7 +61,7 @@
 - Redirect output/input.
 - Piping with `|`.
 - Command chaining with `sequential`, `and`, and `or` -> `;`, `&&`, `||`.
-- sort and redirecting with `output redirection operator` -> `>`
+- sort and redirecting with `output redirection operator`, `append` -> `>`, `>>`.
 - Hands-on Exercise 6.
 
 ### 4:40 - 4:55 PM — Environment and Variables
