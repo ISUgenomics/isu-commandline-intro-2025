@@ -13,4 +13,4 @@ Tasks:
 
 Hints:
 - `find day1/data -type f -name '*.log'`
-- `-mtime -7`, `grep -i`, `grep -n`, `grep 'user=' file`, `find . -type f -empty -delete`
+- `-mtime -7`, `grep -i`, `grep -n`, `grep 'user=' file`, `find . -type f -empty -delete`, `less +/500 file`
