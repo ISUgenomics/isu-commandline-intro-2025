@@ -10,4 +10,4 @@ Tasks:
 - Demonstrate a command that falls back to echo "failed" when trying to read a nonexistent file `missing`
 
 Hints:
-- `cat | tr`, `grep`, `wc -l`, `cut -d, -f1`, `tail -n +2`, `sort -u`, `mkdir -p dir && echo OK`, `cat missing || echo failed`
+- `cat | tr`, `grep`, `wc -l`, `cut -d, -f1`, `tail -n +2`, `sort -u`, `mkdir -p dir && echo OK`, `cat missing || echo failed`, `tr '[:lower:]' '[:upper:]' <file`
