@@ -9,4 +9,4 @@ Tasks:
 - Export `DATA_DIR` and run a sub-shell that echoes it
 - Export `PATH` for the `day1/scripts` directory to be able to call the `EchoScript.sh` from a different directory
 Hints:
-- `echo "$HOME"`, `echo "$PATH"`, `export PATH="$PATH:$(pwd)/day1/scripts"`, `DATA_DIR=...`, `export DATA_DIR`, `bash -c "echo $DATA_DIR"`, `export PATH="$PATH:$(pwd)/day1/scripts"`, `which EchoScript.sh` 
+- `echo "$HOME"`, `echo "$PATH"`, `DATA_DIR=...`, `export DATA_DIR`, `bash -c "echo $DATA_DIR"`, `export PATH="$PATH:$(pwd)/day1/scripts"`, `which EchoScript.sh` 
