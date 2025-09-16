@@ -20,7 +20,7 @@ This folder contains the hands-on materials aligned with `docs/schedule.md`.
 
 - Clone git repository:
   ```bash
-  git clone git@github.com:ISUgenomics/isu-commandline-intro-2025.git
+  git clone https://github.com/ISUgenomics/isu-commandline-intro-2025.git
   ```
 
 ## Layout
