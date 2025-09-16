@@ -13,7 +13,7 @@
 - Introduction to the workshop and objectives
 - Overview of the command line interface (CLI)
 - Terminal vs. shell vs. command line
-- How to open a terminal (Mac, Linux, Windows)
+- Terminal in Mac, Linux, Windows
 
 ### 1:15 - 1:30 PM — Introduction to Open OnDemand and VSCode
 
