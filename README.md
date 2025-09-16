@@ -6,6 +6,9 @@
 
 ---
 
+## Email: 
+If you have any questions/suggestions: gifhelp@iastate.edu
+
 ## Schedule (At a glance)
 
 - Start 1:00 PM: Welcome & setup; CLI concepts and getting to the terminal
