@@ -33,14 +33,14 @@
 
 ### 2:00 - 2:30 PM — Viewing Files and Directories
 
-- `cat`, `less`, `head`, `tail`, `wc`, `ln -s` (folders vs files), wildcard (*)
+- `cat`, `less`, `head`, `tail`, `wc`, wildcard (*)
 - Hands-on Exercise 2
 
 ### 2:30 - 2:40 PM — Break
 
 ### 2:40 - 3:10 PM — Working with Directories and Files
 
-- `mkdir`, `cp`, `mv`, `rm`, recursive operations
+- `mkdir`, `cp`, `mv`, `ln -s` (folders vs files), `rm`, recursive operations
 - Hands-on Exercise 3
 
 ### 3:10 - 3:40 PM — Permissions and Ownership
