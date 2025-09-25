@@ -9,6 +9,9 @@
 ## Email: 
 If you have any questions/suggestions: gifhelp@iastate.edu
 
+## Link to material
+https://research.it.iastate.edu/news/2025/isu-workshop-1-introduction-command-line-material-available
+
 ## Schedule (At a glance)
 
 - Start 1:00 PM: Welcome & setup; CLI concepts and getting to the terminal
