@@ -6,6 +6,11 @@
 
 ---
 
+## Instructors
+- Viswanathan Satheesh
+- Rick Masonbrink
+- SharuPaul Sharma
+
 ## Email: 
 If you have any questions/suggestions: gifhelp@iastate.edu
 
