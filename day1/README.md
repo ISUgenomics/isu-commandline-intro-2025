@@ -7,18 +7,23 @@ This folder contains the hands-on materials aligned with `docs/schedule.md`.
 ## Quick start
 
 - VS Code Server on Nova OnDemand through a browser: `https://nova-ondemand.its.iastate.edu/`
+
   ```
   Account: short_term
   Partition: interactive
   ```
+
 - File -> Open Folder -> `/work/short_term/<your username>/` - create the directory if it does not exist:
+
   ```bash
   cd /work/short_term/
   mkdir $USER
   ```
+
 - Then do File -> Open Folder -> `/work/short_term/<your username>/`
 
 - Clone git repository:
+
   ```bash
   git clone https://github.com/ISUgenomics/isu-commandline-intro-2025.git
   ```
