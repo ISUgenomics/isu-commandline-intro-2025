@@ -1,42 +1,46 @@
-# Workshop Schedule: Introduction to the Command Line
+# Introduction to the Command Line Workshop
 
-## Duration: 4 hours
+**Duration:** 4 hours
 
-**Base Material:** Adapted from [Data Science 101 Workbook - Unix Getting Started](https://datascience.101workbook.org/03-command-line/02e-tutorial-unix-getting-started/#gsc.tab=0)
+**Base material:** Adapted from [Data Science 101 Workbook — Unix Getting Started](https://datascience.101workbook.org/03-command-line/02e-tutorial-unix-getting-started/#gsc.tab=0)
 
 ---
 
 ## Instructors
+
 - Viswanathan Satheesh
 - Rick Masonbrink
-- SharuPaul Sharma
+- Sharu Paul Sharma
 
-## Email: 
-If you have any questions/suggestions: gifhelp@iastate.edu
+## Contact
 
-## Link to material
-https://research.it.iastate.edu/news/2025/isu-workshop-1-introduction-command-line-material-available
+For questions or suggestions, email [gifhelp@iastate.edu](mailto:gifhelp@iastate.edu).
 
-## Schedule (At a glance)
+## Workshop materials
 
-- Start 1:00 PM: Welcome & setup; CLI concepts and getting to the terminal
-- Core topics + hands-on: navigation, viewing files, working with files/dirs, permissions, search, redirects/pipes/chaining
-- Break: 2:30–2:40 PM
-- Wrap-up 4:55–5:00 PM: Recap and Q&A
+- [Workshop recording and materials](https://research.it.iastate.edu/news/2025/isu-workshop-1-introduction-command-line-material-available)
+- [Hands-on exercises](day1/README.md)
 
-[See the full, detailed schedule →](docs/schedule.md)
+## Schedule at a glance
 
----
+- **1:00 PM:** Welcome and setup; CLI concepts and terminal access
+- **Core topics and hands-on practice:** navigation, viewing files, working with files and directories, permissions, search, redirection, pipes, and command chaining
+- **2:30–2:40 PM:** Break
+- **4:55–5:00 PM:** Recap and Q&A
 
-## **Assessment of Time Feasibility**
-
-* This material fits into a four hour session while skipping SSH and text editors
-* Each section allows starts with explanations followed by demonstrations
-* Remaining time will be given to for hands-on exercises
+[See the detailed schedule](docs/schedule.md).
 
 ---
 
-## **Concept map — Current Working Directory**
+## Time feasibility assessment
+
+- This material fits into a four-hour session when SSH and text editors are omitted.
+- Each section starts with an explanation, followed by a demonstration.
+- Remaining time is reserved for hands-on exercises.
+
+---
+
+## Concept map — Current Working Directory
 
 ```mermaid
 graph TD
@@ -49,7 +53,7 @@ graph TD
   Shortcuts["Shortcuts: ., .., ~"]
   WrongDir["Wrong directory"]
   Spaces["Paths with spaces"]
-  Quotes["quotes"]
+  Quotes["Quotes"]
 
   CWD -->|determines base for| RelPaths
   CWD -. ignored by .-> AbsPaths
@@ -61,10 +65,11 @@ graph TD
   Spaces -->|need| Quotes
 ```
 
-![CWD Concept Map](../assets/cwd-concept-map.svg)
-[Download as SVG](../assets/cwd-concept-map.svg)
+![Current Working Directory concept map](docs/assets/cwd-concept-map.svg)
 
-**Resources for Participants:**
+[Download the concept map as an SVG](docs/assets/cwd-concept-map.svg).
 
-* [Cheat Sheet PDF](https://cheatography.com/davechild/cheat-sheets/linux-command-line/pdf/)
-* [ExplainShell](https://explainshell.com/) — Type commands and see breakdown
+## Resources for participants
+
+- [Linux Command Line Cheat Sheet (PDF)](https://cheatography.com/davechild/cheat-sheets/linux-command-line/pdf/)
+- [ExplainShell](https://explainshell.com/) — Enter a command to see an explanation of each argument.
