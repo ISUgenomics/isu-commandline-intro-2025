@@ -1,16 +1,23 @@
 # Exercise 5 — Finding files and searching inside files
 
-Goals: use `find` and `grep` (with options).
+**Goals:** Use `find` to locate files and `grep` with common options to search file contents.
 
-Tasks:
-- Find all `.log` files under `day1/data/`
-- Find files modified in the last 7 days under `day1/data/`
-- Search for lines containing `ERROR` (case-insensitive) in all logs
-- Search for requests returning status `500` in `access.log` and print line numbers
+**Run these tasks from the repository root.**
 
-- Find lines containing the word `user` followed by `=`
-- Delete any empty files under `day1/data/tmp/`
+## Tasks
 
-Hints:
+- Find all regular files ending in `.log` under `day1/data/`
+- Find all regular files modified within the last seven days under `day1/data/`
+- Search all `.log` files under `day1/data/` for lines containing `ERROR`, ignoring case
+- Search `day1/data/projects/alpha/logs/access.log` for requests with HTTP status code `500` and include line numbers
+- Search `day1/data/projects/alpha/logs/access.log` for lines containing `user=` and include line numbers
+- Find empty regular files under `day1/data/tmp/`, review the matches, and then delete them
+
+## Hints
+
 - `find day1/data -type f -name '*.log'`
-- `-mtime -7`, `grep -i`, `grep -n`, `grep 'user=' file`, `find . -type f -empty -delete`, `less +/500 file or grep -n "500" file` 
+- `find day1/data -type f -mtime -7`
+- `grep -ri --include='*.log' 'ERROR' day1/data/`
+- `grep -n ' 500 ' day1/data/projects/alpha/logs/access.log`
+- `grep -n 'user=' day1/data/projects/alpha/logs/access.log`
+- Preview with `find day1/data/tmp -type f -empty`; after confirming the results, add `-delete`.
